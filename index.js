@@ -47,8 +47,13 @@ export default function SQLiteStorage(SQLite = {}, config = {}) {
               "SELECT value FROM store WHERE key=?",
               [key],
               (tx, rs) => {
+                if (rs.rows._array.length > 0){
                 resolve(rs.rows._array[0].value);
                 cb(null, rs.rows._array[0].value);
+              } else {
+                resolve(rs.rows._array);
+                cb(null, rs.rows._array);
+              }
               },
               (tx, err) => {
                 cb(err);
