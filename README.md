@@ -66,7 +66,7 @@ Above methods conform to the `AsyncStorage` method signatures.
 # Tested under following environments
 Examples located under `examples\rn` directory **have not been tested in this fork.**
 
-However, this code is currently running in an application using `redux-persist@5.10.0` without issue.
+However, this code is currently running in an application using `redux-persist@5.10.0` without any reported issues.
 
 
 # Future enhancements
