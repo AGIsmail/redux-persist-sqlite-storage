@@ -140,7 +140,7 @@ export default function SQLiteStorage(SQLite = {}, config = {}) {
         .then(db => {
           db.transaction(tx => {
             tx.executeSql(
-              "SELECT * FROM store",
+            'SELECT key FROM store', [],
               [],
               (tx, rs) => {
                 const result = [];
