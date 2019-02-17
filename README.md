@@ -3,7 +3,7 @@
 A redux-persist store adaptor which uses SQLite database to persist store.
 This version of [prsn's solution](https://github.com/prsn/redux-persist-sqlite-storage) has been modified to work with the [Expo SQLite module](https://docs.expo.io/versions/latest/sdk/sqlite/).
 
-**This has been tested on Android only.**
+**This has only been tested on Android.**
 
 # Motivation
 
@@ -64,9 +64,8 @@ clear([callback]: ?(error: ?Error) => void)
 Above methods conform to the `AsyncStorage` method signatures.
 
 # Tested under following environments
-Examples located under `examples\rn` directory **have not been tested in this fork.**
 
-However, this code is currently running in an application using `redux-persist@5.10.0` without any reported issues.
+This code is currently running in an application using `redux-persist@5.10.0` on Android without any reported issues.
 
 
 # Future enhancements
